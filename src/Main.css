@@ -1,0 +1,29 @@
+.navbar {
+    height: 64px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box {
+    margin: 0 16px;
+}
+.logo {
+    font-family: Rotobo;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+.logo:visited {
+    color: white;
+}
+.logo:hover {
+    text-decoration: none;
+}
+.menu-box {
+    width: 600px;
+}
+.btn-box {
+    margin: 0 16px;
+}

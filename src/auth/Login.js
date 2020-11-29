@@ -49,7 +49,6 @@ function Login() {
       body: `username=${username}&password=${password}`
     }).then((response) => {
       if (response.ok) {
-        console.log('success')
         // todo: save to localstorage and redirect
         fetch('/api/admin/you').then((res) => res.ok ? res.json() : new Error(res.statusText)).then((data) => {
             localStorage.setItem('username', data.username)

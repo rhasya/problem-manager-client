@@ -4,9 +4,6 @@ import authContext from './authContext'
 
 function PrivateRoute({ children, ...rest }) {
   const auth = useContext(authContext)
-  
-  console.log(auth.username)
-
   return (
     <Route {...rest} render={({location}) => 
       auth.username ? (children) :
