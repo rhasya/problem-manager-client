@@ -67,18 +67,18 @@ function Login() {
   }
   else {
     return (
-        <Container maxWidth="xs" className={classes.root}>
+      <Container maxWidth="xs" className={classes.root}>
         <Card className={classes.loginBox}>
             <CardContent>
-            <Typography variant="h5">Sign in</Typography>
-            <TextField id="username" label="Username" variant="outlined" className={classes.inputBox} value={username} onChange={handleChange}/>
-            <TextField id="password" label="Password" variant="outlined" type="password" className={classes.inputBox} value={password} onChange={handleChange}/>
+              <Typography variant="h5">Sign in</Typography>
+              <TextField id="username" label="Username" variant="outlined" className={classes.inputBox} value={username} onChange={handleChange}/>
+              <TextField id="password" label="Password" variant="outlined" type="password" className={classes.inputBox} value={password} onChange={handleChange}/>
             </CardContent>
             <CardActions className={classes.loginBoxBtnArea}>
-            <Button variant="contained" color="primary" onClick={signIn}>Sign in</Button>
+              <Button variant="contained" color="primary" onClick={signIn}>Sign in</Button>
             </CardActions>
         </Card>
-        </Container>
+      </Container>
     )
   }
 }
